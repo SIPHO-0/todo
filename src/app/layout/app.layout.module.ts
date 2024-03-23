@@ -17,7 +17,6 @@ import { AppSidebarComponent } from './app.sidebar.component';
 import { AppFooterComponent } from './app.footer.component';
 import { AppConfigModule } from './config/config.module';
 import { AppLayoutComponent } from './app.layout.component';
-import { AppBreadcrumbComponent } from './app.breadcrumb.component';
 import { StyleClassModule } from 'primeng/styleclass';
 import { TooltipModule } from 'primeng/tooltip';
 import { DropdownModule } from 'primeng/dropdown';
@@ -44,10 +43,9 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
         AppFooterComponent,
         AppMenuComponent,
         AppLayoutComponent,
-        AppBreadcrumbComponent,
-         TasklistComponent,
+        TasklistComponent,
         CreateTaskComponent,
-         TaskListComponent
+        TaskListComponent
     ],
     imports: [
         BrowserModule,

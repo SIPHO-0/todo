@@ -69,13 +69,13 @@ export class LayoutService {
     tabClose$ = this.tabClose.asObservable();
 
     onMenuToggle() {
-        // if (this.isOverlay()) {
-        //     this.state.overlayMenuActive = !this.state.overlayMenuActive;
+        if (this.isOverlay()) {
+            this.state.overlayMenuActive = !this.state.overlayMenuActive;
 
-        //     if (this.state.overlayMenuActive) {
-        //         this.overlayOpen.next(null);
-        //     }
-        // }
+            if (this.state.overlayMenuActive) {
+                this.overlayOpen.next(null);
+            }
+        }
         if (this.isDesktop()) {
             this.state.staticMenuDesktopInactive = !this.state.staticMenuDesktopInactive;
         }
